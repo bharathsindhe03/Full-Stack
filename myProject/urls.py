@@ -21,6 +21,7 @@ from myApp1.views import current_time
 from myApp2.views import offset_increase,offset_decrease
 from myApp3.views import lists
 from myApp4.views import home, contactus,aboutus
+from myApp5.views import course_search, reg
 
 urlpatterns = [
     #app1
@@ -38,5 +39,11 @@ urlpatterns = [
     path('contactus/',contactus),
     path('aboutus/',aboutus),
 
+    #app5
     path('admin/', admin.site.urls),
+    path('reg/', reg), 
+    path('course_search/',course_search), 
+
+    #app6
+    
 ]
