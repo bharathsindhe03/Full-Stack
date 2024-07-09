@@ -8,7 +8,7 @@ class StudentAdmin(admin.ModelAdmin):
     search_fields = ('student_name',) 
 
 @admin.register(Course) 
-class StudentAdmin(admin.ModelAdmin): 
+class CourseAdmin(admin.ModelAdmin): 
     list_display = ('course_code','course_name','course_credits') 
     ordering=('course_code',) 
     search_fields = ('course_code',) 
